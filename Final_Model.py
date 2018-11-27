@@ -4,7 +4,7 @@
 # In[1]:
 
 from IPython.display import Image
-Image(filename='Santander logo.png', width=1200, height=100)
+#Image(filename='Santander logo.png', width=1200, height=100)
 
 
 # This is the Kaggle data compitition where Santander has provided its customer's demographics information, and which products customer's have bought which products in the past 17 months. Based on cutsomer's historical purchases, the objective of this competition is to predict which customer's will buy which product in the next month. 
@@ -13,77 +13,77 @@ Image(filename='Santander logo.png', width=1200, height=100)
 
 # This is the final model which is only a short version after completing EDA and several versions of models. 
 #### Column Name	  Description
-fecha_dato	          The table is partitioned for this column
-ncodpers	          Customer code
-ind_empleado	      Employee index: 
-                        A active, 
-                        B ex employed, 
-                        F filial, 
-                        N not employee, 
-                        P passive
-pais_residencia	      Customer's Country residence
-sexo	              Customer's sex
-age	                  Age
-fecha_alta	          The date in which the customer became as the first holder of a contract in the bank
-ind_nuevo	          New customer Index. 1 if the customer registered in the last 6 months.
-antiguedad	          Customer seniority (in months)
-indrel	              1 (First/Primary), 
-                      99 (Primary customer during the month but not at the end of the month)
-ult_fec_cli_1t	      Last date as primary customer (if he isn't at the end of the month)
-indrel_1mes	          Customer type at the beginning of the month ,
-                        1 (First/Primary customer), 
-                        2 (co-owner ),
-                        P (Potential),
-                        3 (former primary), 
-                        4(former co-owner)
-tiprel_1mes	          Customer relation type at the beginning of the month, 
-                        A (active), 
-                        I (inactive), 
-                        P (former customer),
-                        R (Potential)
-indresi	              Residence index 
-                        (S (Yes) or N (No) if the residence country is the same than the bank country)
-indext	              Foreigner index 
-                        (S (Yes) or N (No) if the customer's birth country is different than the bank country)
-conyuemp	          Spouse index. 
-                        1 if the customer is spouse of an employee
-canal_entrada	      channel used by the customer to join
-indfall	              Deceased index. N/S
-tipodom	              Addres type. 1, primary address
-cod_prov	          Province code (customer's address)
-nomprov	              Province name
-ind_actividad_cliente	Activity index 
-                        (1, active customer; 
-                        0, inactive customer)
-renta	              Gross income of the household
-segmento	          segmentation: 
-                        01 - VIP, 
-                        02 - Individuals 
-                        03 - college graduated
-ind_ahor_fin_ult1	  Saving Account
-ind_aval_fin_ult1	  Guarantees
-ind_cco_fin_ult1	  Current Accounts
-ind_cder_fin_ult1	  Derivada Account
-ind_cno_fin_ult1	  Payroll Account
-ind_ctju_fin_ult1	  Junior Account
-ind_ctma_fin_ult1	  Más particular Account
-ind_ctop_fin_ult1	  particular Account
-ind_ctpp_fin_ult1	  particular Plus Account
-ind_deco_fin_ult1	  Short-term deposits
-ind_deme_fin_ult1	  Medium-term deposits
-ind_dela_fin_ult1	  Long-term deposits
-ind_ecue_fin_ult1	  e-account
-ind_fond_fin_ult1	  Funds
-ind_hip_fin_ult1	  Mortgage
-ind_plan_fin_ult1	  Pensions
-ind_pres_fin_ult1	  Loans
-ind_reca_fin_ult1	  Taxes
-ind_tjcr_fin_ult1	  Credit Card
-ind_valo_fin_ult1	  Securities
-ind_viv_fin_ult1	  Home Account
-ind_nomina_ult1	      Payroll
-ind_nom_pens_ult1	  Pensions
-ind_recibo_ult1	      Direct Debit
+#fecha_dato	          The table is partitioned for this column
+#ncodpers	          Customer code
+#ind_empleado	      Employee index: 
+#                        A active, 
+#                        B ex employed, 
+#                        F filial, 
+#                        N not employee, 
+#                        P passive
+#pais_residencia	      Customer's Country residence
+#sexo	              Customer's sex
+#age	                  Age
+#fecha_alta	          The date in which the customer became as the first holder of a contract in the bank
+#ind_nuevo	          New customer Index. 1 if the customer registered in the last 6 months.
+#antiguedad	          Customer seniority (in months)
+#indrel	              1 (First/Primary), 
+#                      99 (Primary customer during the month but not at the end of the month)
+#ult_fec_cli_1t	      Last date as primary customer (if he isn't at the end of the month)
+#indrel_1mes	          Customer type at the beginning of the month ,
+#                        1 (First/Primary customer), 
+#                        2 (co-owner ),
+#                        P (Potential),
+#                        3 (former primary), 
+#                        4(former co-owner)
+#Wtiprel_1mes	          Customer relation type at the beginning of the month, 
+#                        A (active), 
+#                        I (inactive), 
+#                        P (former customer),
+#                        R (Potential)
+#indresi	              Residence index 
+#                        (S (Yes) or N (No) if the residence country is the same than the bank country)
+#indext	              Foreigner index 
+#                        (S (Yes) or N (No) if the customer's birth country is different than the bank country)
+#conyuemp	          Spouse index. 
+#                        1 if the customer is spouse of an employee
+#canal_entrada	      channel used by the customer to join
+#indfall	              Deceased index. N/S
+#tipodom	              Addres type. 1, primary address
+#cod_prov	          Province code (customer's address)
+#nomprov	              Province name
+#ind_actividad_cliente	Activity index 
+#                        (1, active customer; 
+#                        0, inactive customer)
+#renta	              Gross income of the household
+#segmento	          segmentation: 
+#                        01 - VIP, 
+#                        02 - Individuals 
+#                        03 - college graduated
+#ind_ahor_fin_ult1	  Saving Account
+#ind_aval_fin_ult1	  Guarantees
+#ind_cco_fin_ult1	  Current Accounts
+#ind_cder_fin_ult1	  Derivada Account
+#ind_cno_fin_ult1	  Payroll Account
+#ind_ctju_fin_ult1	  Junior Account
+#ind_ctma_fin_ult1	  Más particular Account
+#ind_ctop_fin_ult1	  particular Account
+#ind_ctpp_fin_ult1	  particular Plus Account
+#ind_deco_fin_ult1	  Short-term deposits
+#ind_deme_fin_ult1	  Medium-term deposits
+#ind_dela_fin_ult1	  Long-term deposits
+#ind_ecue_fin_ult1	  e-account
+#ind_fond_fin_ult1	  Funds
+#ind_hip_fin_ult1	  Mortgage
+#ind_plan_fin_ult1	  Pensions
+#ind_pres_fin_ult1	  Loans
+#ind_reca_fin_ult1	  Taxes
+#ind_tjcr_fin_ult1	  Credit Card
+#ind_valo_fin_ult1	  Securities
+#ind_viv_fin_ult1	  Home Account
+#ind_nomina_ult1	      Payroll
+#ind_nom_pens_ult1	  Pensions
+#ind_recibo_ult1	      Direct Debit
 # In[1]:
 
 import csv
@@ -417,7 +417,7 @@ def runXGB(train_X, train_y, seed_val=25):
 
 if __name__ == "__main__":
     start_time = datetime.datetime.now()
-    data_path = "../Capstone Project/Raw data/"
+    data_path = "C:\Users\SUDHANSHU KUMAR\Desktop"
     train_file =  open(data_path + "train_ver2.csv")
     print('Starting file processing')
     #x_vars_list, y_vars_list, cust_dict = processData(train_file, {})
@@ -546,56 +546,8 @@ if __name__ == '__main__':
 #Sample output of hyper-parameter tunning
 #trained all parameters individually and used the optimum hyper-parameters in the model for prediction
 
-Parameter tunning - Gamma
-Fitting the model
-Training model completed
-0.354282803146
-gamma: 0.8
-[21 21 21 ..., 21 21  0]
-0:00:44.938134
--------------------------------
-Parameter tunning - Learning Rate(eta)
-Fitting the model
-Training model completed
-0.355558615187
-eta: 0.08
-[21 21 21 ..., 21 21  0]
-0:00:41.614512
--------------------------------
-Parameter tunning - reg-alpha
-Fitting the model
-Training model completed
-0.355552410171
-reg_alpha: 0.065
-[21 21 21 ..., 21 21  0]
-0:00:38.515044
--------------------------------
-Parameter tunning - reg-alpha
-Fitting the model
-Training model completed
-0.355571445945
-reg_alpha: 0.075
-[21 21 21 ..., 21 21  0]
-0:00:47.893021
--------------------------------
-Parameter tunning - max-depth, min_child_weight
-Training model completed
-0.355973424711
-max_depth: 9
-min_child_weight: 3
-[21 21 21 ..., 21 21  0]
-0:01:38.625856
--------------------------------
-Parameter tunning - subsample, colsample_bytree
-Fitting the model
-Training model completed
-0.356127246451
-colsample_bytree: 0.9
-subsample: 0.9
-[21 21 21 ..., 21 21  0]
-0:07:25.183973
-# In[18]:
 
+# In[18]:
 print("Building model..")
 model = runXGB(train_X, train_y, seed_val=0)
 print("Predicting..")
@@ -630,8 +582,8 @@ out_df.to_csv('submission28.csv', index=False)
 # In[8]:
 
 #Model results can be seen here:
-from IPython.display import Image
-Image(filename='Kaggle Rank.png', width=800, height=10)
+#from IPython.display import Image
+#Image(filename='Kaggle Rank.png', width=800, height=10)
 
 
 # In[ ]:
